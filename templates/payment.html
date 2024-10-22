@@ -19,7 +19,7 @@
     <main>
       <header>
         <div id="qr-code">
-          <img src="{{ host}}/payments/pix/qr_code/{{ qrcode      }}" alt="QR Code" />
+          <img src="{{ host}}/payments/pix/qr_code/{{ qrcode }}" alt="QR Code" />
         </div>
 
         <aside>
@@ -64,11 +64,11 @@
     <script>
       var socket = io.connect('{{ host }}')
       socket.on('connect', function(){
-        console.log("Websocket connected")
+        console.log("Websocket connected");
       });
       socket.on('payment-confirmed-{{ payment_id }}', function(){
         console.log("Payment confirmed");
-        location.reload();
+        location.reload()
       });
     </script>
 
