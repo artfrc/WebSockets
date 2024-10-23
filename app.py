@@ -23,7 +23,7 @@ def create_payment_pix():
   new_payment = Payment(value=data['value'], expiration_date=expiration_date)
   
   pix_obj = Pix()
-  data_payment_pix = pix_obj.create_payment()
+  data_payment_pix = pix_obj.create_payment(base_dir='')
   new_payment.bank_payment_id = data_payment_pix['bank_payment_id']
   new_payment.qr_code = data_payment_pix['qr_code_path']
   
