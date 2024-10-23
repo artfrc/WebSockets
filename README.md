@@ -1,7 +1,7 @@
 # API Python com Websockets
 
 <p align="center">
-Uma API que faz o uso de notificações em tempo real com protocolo Websocket e também Flask_socketIO para fazer a confirmação de um pagamento em tempo real
+Uma API que faz o uso de notificações em tempo real com protocolo Websocket e também Flask_socketIO para fazer a confirmação de um pagamento em tempo real. É gerado um Qrcode para o pagamento e também um Id do Qrcode para fazer o pagamento simulando o copia e cola.
 </p>
 
 <p align="center">
